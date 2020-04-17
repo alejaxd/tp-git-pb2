@@ -14,11 +14,11 @@ System.out.println("Ingrese el primer numero");
 a = teclado.next();
 System.out.println("Ingrese el segundo numero");
 a = teclado.next();
-if(opcion.equals(1)){
+if(opcion.equals(3)){
 resultado = a + b;
-}else if(opcion.equals(2)){
+}else if(opcion.equals(1)){
 resultado = a - b;
-}else if(opcion.equals(3)){
+}else if(opcion.equals(2)){
 resultado = a * b;
 }else{
 resultado = a / b;
