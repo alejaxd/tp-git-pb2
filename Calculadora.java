@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ahorcado {
-public static void main    /* Comentario*/   (String[] args) {
+public static void main    /* Comentario*/  (String[] args) {
 Integer a;
 Integer b;
 Integer opcion;
@@ -22,12 +22,20 @@ case 2:
 resultado = a - b;
 break;
 case 3:
-resultado = a * b;
+resultado = multiplicar(a, b);
 break;
 default:
-resultado = a / b;
+resultado = dividir(a, b);
 break;
 System.out.println("El resultado es " + resultado.toString());
 }
+}
+private Integer multiplicar (Integer x, Integer y){
+    Integer resultado = x * y;
+    return resultado;
+}
+private Integer division (Integer x, Integer y){
+    Integer resultado = x / y;
+    return resultado;
 }
 }
