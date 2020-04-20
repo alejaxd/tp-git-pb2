@@ -16,10 +16,10 @@ System.out.println("Ingrese el segundo numero");
 a = teclado.next();
 switch(opcion){
 case 1:
-resultado = a + b;
+resultado = sumar(a,b);
 break;
 case 2:
-resultado = a - b;
+resultado = resta(a,b);
 break;
 case 3:
 resultado = a * b;
@@ -30,4 +30,15 @@ break;
 System.out.println("El resultado es " + resultado.toString());
 }
 }
+
+private Integer sumar (Integer x, Integer y){
+    Integer suma = x + y;
+    return suma;
+}
+
+private Integer restar (Integer x, Integer y){
+    Integer resta = x - y;
+    return resta;
+}
+
 }
