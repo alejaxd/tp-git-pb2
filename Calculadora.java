@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ahorcado {
-public static void main    /* Comentario*/   (String[] args) {
+public static void main    /* Comentario*/  (String[] args) {
 Integer a;
 Integer b;
 Integer opcion;
@@ -13,7 +13,7 @@ opcion = teclado.next();
 System.out.println("Ingrese el primer numero");
 a = teclado.next();
 System.out.println("Ingrese el segundo numero");
-a = teclado.next();
+b = teclado.next();
 switch(opcion){
 case 1:
 resultado = sumar(a,b);
@@ -22,10 +22,10 @@ case 2:
 resultado = resta(a,b);
 break;
 case 3:
-resultado = a * b;
+resultado = multiplicar(a, b);
 break;
 default:
-resultado = a / b;
+resultado = dividir(a, b);
 break;
 System.out.println("El resultado es " + resultado.toString());
 }
@@ -41,4 +41,12 @@ private Integer restar (Integer x, Integer y){
     return resta;
 }
 
+private Integer multiplicar (Integer x, Integer y){
+    Integer resultado = x * y;
+    return resultado;
+}
+private Integer division (Integer x, Integer y){
+    Integer resultado = x / y;
+    return resultado;
+}
 }
