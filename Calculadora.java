@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ahorcado {
-public static void main(String[] args) {
+public static void main    /* Comentario*/   (String[] args) {
 Integer a;
 Integer b;
 Integer opcion;
